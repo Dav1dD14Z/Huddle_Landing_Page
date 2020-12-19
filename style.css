@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background-color: var(--Violet);
+    background-image: url(./images/bg-desktop.svg);
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    margin: 0px;
+}
+
+header a {
+    margin: 0px;
+}
+
+header a img {
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+main {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+section {
+    display: flex;
+}
+
+.contenedor__img {
+    width: 50%;
+    margin-right: 60px;
+}
+
+.contenedor__img img {
+    width: 100%;
+}
+
+.contenedor__info {
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.contenedor__info h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin: 50px 0px 0px 0px;
+}
+
+.contenedor__info p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contenedor__info a {
+    color: var(--Violet);
+    background-color: white;
+    text-decoration: none;
+    padding: 15px 80px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 3px 2px rgba(0, 0, 0, 0.295);
+    font-size: 20px;
+}
+
+.contenedor__info a:hover {
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 130px;
+}
+
+footer i {
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+footer i:hover {
+    cursor: pointer;
+    color:  var(--SoftMagenta);
+    border: 2px solid  var(--SoftMagenta);
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        background-image: url(./images/bg-mobile.svg);
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header a img {
+        margin: 5px 0px 40px 0px;
+    }
+
+    section {
+        display: block;
+    }
+
+    .contenedor__img {
+        width: 100%;
+        margin-right: 0xp;
+    }
+
+    .contenedor__img svg {
+        width: 100%;
+    }
+
+    .contenedor__info {
+        width: 100%;
+    }
+
+    .contenedor__info h2 {
+        margin-top: 50px;
+        font-size: 30px;
+    }
+
+    footer {
+        margin-right: 0px;
+        justify-content: center;
+    }
+
+    footer i {
+        margin: 70px 20px 0px 20px;
+    }
+}
